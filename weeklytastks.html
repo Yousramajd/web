@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Timeline</title>
+    <link rel="stylesheet" href="weeklytasks.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+        
+        body {
+        margin: 20px 300px;
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        background: #ffffff;
+        color: #000000;
+        text-align: center;
+        }
+        
+        .container {
+        padding: 15px 40px;
+        position: relative;
+        background: inherit;
+        width: 60%;
+        
+        }
+        
+        .container.left {
+        left: 0%;
+        }
+        .container.right {
+        left: 40%;
+        }
+        
+        
+        .container::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: calc(50% - 8px);
+        right: -8px;
+        background: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 16px;
+        z-index: 1;
+        }
+        .container.right::after {
+        left: -8px;
+        }
+        
+        
+
+        .container::before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        top: calc(50% - 1px);
+        right: 8px;
+        background: #000000;
+        z-index: 1;
+        }
+        .container.right::before {
+        left: 8px;
+        }
+        
+        
+        
+        
+        .container .number {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 12px);
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 1;
+        }
+        
+        .container.left .number {
+        right: -100px;
+        }
+        
+        .container.right .number {
+        left: -100px;
+        }
+        
+        .container .content {
+        padding: 30px 30px 30px 30px;
+        background: #9ed8ff;
+        position: relative;
+        border-radius: 50px 50px 50px 50px;
+        }
+        
+        .container.right .content {
+        padding: 30px 30px 30px 30px;
+        border-radius: 50px 50px 50px 50px;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div class="timeline">
+            
+            <div class="container right">
+              <div class="number">WEEK 1</div>
+              <div class="content">
+                <h2><b> My first ever Website</b></h2>
+                <p><small> I learnt how to set up a HTML file, how to diplay text and image</small></p>
+                <br>
+                <a href="Week 1/Week1.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="number">WEEK 2</div>
+              <div class="content">
+                <h2><b> Hyperlinks</b></h2>
+                <p><small> I learnt how to use "herf" to link files and websites</small></p>
+                <br>
+                <a href="Week 2/Week2.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container right">
+              <div class="number">WEEK 3</div>
+              <div class="content">
+                <h2><b> Input</b></h2>
+                <p><small> I learnt how to use use input functions...</small></p>
+                <br>
+                <a href="Week 3/Week3.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="number">WEEK 4</div>
+              <div class="content">
+                <h2><b> Intro to CSS</b></h2>
+                <p><small> I learnt how to use CSS</small></p>
+                <br>
+                <a href="Week 4/Week4.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container right">
+              <div class="number">WEEK 5</div>
+              <div class="content">
+                <h2><b> Design</b></h2>
+                <p><small> I learnt how to use CSS to better design</small></p>
+                <br>
+                <a href="Week 5/Week5.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+            
+            <div class="container left">
+              <div class="number">WEEK 6</div>
+              <div class="content">
+                <h2><b> 6th week</b></h2>
+                <p><small> I learnt how...</small></p>
+                <br>
+                <a href="Week 1/Week1.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container right">
+              <div class="number">WEEK 7</div>
+              <div class="content">
+                <h2><b> 7th week</b></h2>
+                <p><small> I learnt how to...</small></p>
+                <br>
+                <a href="Week 2/Week2.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container left">
+              <div class="number">WEEK 8</div>
+              <div class="content">
+                <h2><b> 8th week</b></h2>
+                <p><small> I learnt how to ...</small></p>
+                <br>
+                <a href="Week 1/Week1.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+
+            <div class="container right">
+              <div class="number">WEEK 9</div>
+              <div class="content">
+                <h2><b> 9th week</b></h2>
+                <p><small> I learnt how to...</small></p>
+                <br>
+                <a href="Week 2/Week2.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+            <div class="container left">
+
+              <div class="number">WEEK 10</div>
+              <div class="content">
+                <h2><b> 10th week</b></h2>
+                <p><small> I learnt how to...</small></p>
+                <br>
+                <a href="Week 1/Week1.html"><font color="black"><u>Click to see</u></font></a>
+              </div>
+            </div>
+
+            <div class="container right">
+              <div class="number">WEEK 11</div>
+              <div class="content">
+                <h2>11th week</h2>
+                <p><small> I learnt how to...</small></p>
+                <br>
+                <a href="Week 1/Week1.html"><font color="black"><u>Click to see</u></font></a>
+              
+              </div>
+            </div>
+
+          </div>
+</body>
+</html>

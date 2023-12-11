@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar button {
+    background-color: #b38e28;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    float: left;
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar button:hover {
+    background-color: #bb902b;
+}
+
+h1 {
+    color: #333;
+    padding: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

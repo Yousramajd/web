@@ -1,0 +1,37 @@
+body {
+    background-color: #cceeff;
+}
+h1{
+    font-size: 75px;
+}
+.box{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.mains {
+    display: flex;
+    justify-content: space-around;
+ }
+
+.mains p {
+    font-size: 24px;
+    margin-top: 100;
+    
+ }
+ .picturesMains {
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ .buttonSection{
+    width: 24%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+     left: 50%;
+    transform: translate(-90%, -100%);
+    z-index: 1;
+    
