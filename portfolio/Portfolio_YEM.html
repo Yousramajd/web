@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Yousra's Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="yousrascv.pdf">CV</a>
+            <a href="Projects/Projects.html">Projects</a>
+            <a href="My Art/Myart.html"> My Art </a>
+
+        </nav>
+    </header>
+    <main>
+
+        <img id="backgroundImage" src="background.jpeg" alt="backgroundImage">
+
+        <div class="name" id="name"></div>
+
+        <div class=contactme>
+            <h1>GET IN TOUCH</h1>
+            <section class="contact-form">
+                <form action="submit_form.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Enter you Full name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter you Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter you Enquiry" required></textarea>
+                    <button type="submit" onclick="submitForm()">Submit</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://www.instagram.com/yous_majd/"> <img src="insta_logo.jpeg" alt="insta logo" width="30px"
+                    height=auto></a>
+            <a href="https://www.linkedin.com/in/yousra-el-majdoubi-9baa892a5"><img src="lin_logo.jpeg" alt="lin logo"
+                    width="30px" height=auto></a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
